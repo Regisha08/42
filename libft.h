@@ -6,7 +6,7 @@
 /*   By: rnureeva <rnureeva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 16:51:38 by rnureeva          #+#    #+#             */
-/*   Updated: 2019/07/31 14:25:23 by rnureeva         ###   ########.fr       */
+/*   Updated: 2019/11/02 10:50:36 by rnureeva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stddef.h>
+# include <fcntl.h>
+# define BUFF_SIZE 1
+# define FD_MAX 4096
 
 typedef struct		s_list
 {
@@ -94,5 +97,6 @@ int					ft_strsize(char *str, char c);
 int					ft_power(int n);
 int					ft_even(int n);
 void				ft_lstappend(t_list **alst, t_list *new);
-
+int					get_next_line(const int fd, char **line);
+int					ft_wdcounter(char const *str, char c);
 #endif
