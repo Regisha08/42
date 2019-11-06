@@ -6,11 +6,11 @@
 /*   By: rnureeva <rnureeva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/02 10:42:56 by rnureeva          #+#    #+#             */
-/*   Updated: 2019/11/02 10:49:01 by rnureeva         ###   ########.fr       */
+/*   Updated: 2019/11/06 14:41:41 by rnureeva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_cw(char const *str, char c)
+int		ft_wdcounter(char const *str, char c)
 {
 	int	words;
 	int	i;
